@@ -1,24 +1,33 @@
-# README
+# Ruby On Rails Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+This is an example of creating ruby on rails application.
 
-* Ruby version
+<br>
 
-* System dependencies
+### Development Setup
 
-* Configuration
+In the Terminal, run: <br>
+`
+rails s
+`
+<br>
+### Test Setup
+https://github.com/rspec/rspec-rails <br>
+https://github.com/thoughtbot/factory_bot_rails
 
-* Database creation
+`
+rails generate rspec:install 
+`
 
-* Database initialization
+Removing default fixtures from Adding this to spec/rails_helper.rb <br>
+`
+  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+`
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Adding this to spec/rails_helper.rb <br>
+`
+  config.include FactoryBot::Syntax::Methods
+`
