@@ -8,7 +8,7 @@ This is an example of creating ruby on rails application.
 
 ### Development Setup
 
-In the Terminal, run: <br>
+In the terminal, run: <br>
 `
 rails s
 `
@@ -30,4 +30,10 @@ Removing default fixtures from Adding this to spec/rails_helper.rb <br>
 Adding this to spec/rails_helper.rb <br>
 `
   config.include FactoryBot::Syntax::Methods
+`
+
+Run Test <br>
+In the terminal, run: <br>
+`
+rspec
 `
